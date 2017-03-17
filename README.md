@@ -30,15 +30,15 @@ module.exports = model;
 **In this example:**
 
 Text1
-⋅⋅* has to be a string
-⋅⋅* it is mandatory
-⋅⋅* it has to validate against a regEx.
++ has to be a string
++ it is mandatory
++ it has to validate against a regEx.
 
 Array1
-⋅⋅* has to be an array
-⋅⋅* the items from array must be of type boolean
-⋅⋅* it is not mandatory (by default mandatory == false if missing - throws warning)
-⋅⋅* the array must validate against testArray function
++ has to be an array
++ the items from array must be of type boolean
++ it is not mandatory (by default mandatory == false if missing - throws warning)
++ the array must validate against testArray function
 
 
 ### Example or private descriptor:
@@ -67,13 +67,13 @@ module.exports = model;
 **In this example:**
 
 Text1
-⋅⋅* is public (it is exposed to front-end)
-⋅⋅* it has a decorator
-⋅⋅* it's DB field is 'text1'
++ is public (it is exposed to front-end)
++ it has a decorator
++ it's DB field is 'text1'
 
 Array1
-⋅⋅* is public (it is exposed to front-end)
-⋅⋅* it's DB field is 'array1'
++ is public (it is exposed to front-end)
++ it's DB field is 'array1'
 
 
 
