@@ -20,7 +20,7 @@ const model = {
         _mandatory: true,
         _validate: '.{6,}$',
     },
-   Array1: {
+    Array1: {
         _type: 'array',
         _itemType: 'boolean',
         _validate: helpers.testArray,
@@ -58,7 +58,7 @@ const model = {
 	_decorator: helpers.upperText,
         _privateName: 'text1'
     },
-   Array1: {
+    Array1: {
         _public: false,
         _privateName: 'array1'
     },
