@@ -13,7 +13,7 @@ The other is private (only the back-end developers should have access to it) and
 // file name: entities/test.js
 const helpers = {
     parseTestArray: function testArray(item){
-        if(item.length > 2) return true; else return false;
+        return item.length > 2
     }
 }
 const model = {
@@ -82,7 +82,7 @@ _Array1_
 
 Example: prepare private object (from server) for front-end
 ```javascript
-var testPrivateObj = {text1: 'abcdef', array1:[true, false, false]}
+let testPrivateObj = {text1: 'abcdef', array1:[true, false, false]}
 
 let privateObj = new privateEntity('test', testPrivateObj);
 // 'test' - entity name (the file name of the entity descriptor)
@@ -93,7 +93,7 @@ console.log(privateObj.makePublic());
 
 Example: prepare public object (received from front-end) for server manipulation
 ```javascript
-var testPublicObj = { Text1: 'abcdef', Array1: [ true, false, false ] }
+let testPublicObj = { Text1: 'abcdef', Array1: [ true, false, false ] }
 
 let publicObj = new publicEntity('test', testPublicObj);
 // 'test' - entity name (the file name of the entity descriptor)
