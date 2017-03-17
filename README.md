@@ -28,12 +28,10 @@ module.exports = model;
 ```
 
 **In this example:**
-
 Text1
 + has to be a string
 + it is mandatory
 + it has to validate against a regEx.
-
 Array1
 + has to be an array
 + the items from array must be of type boolean
@@ -65,12 +63,10 @@ module.exports = model;
 ```
 
 **In this example:**
-
 Text1
 + is public (it is exposed to front-end)
 + it has a decorator
 + it's DB field is 'text1'
-
 Array1
 + is public (it is exposed to front-end)
 + it's DB field is 'array1'
