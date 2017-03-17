@@ -97,6 +97,7 @@ let testPublicObj = { Text1: 'abcdef', Array1: [ true, false, false ] }
 
 let publicObj = new publicEntity('test', testPublicObj);
 // 'test' - entity name (the file name of the entity descriptor)
+
 console.log(publicEntity.makePrivate());
 // will print: { text1: 'abcdef', array1: [ true, false, false ] }
 ```
