@@ -11,7 +11,7 @@ The other is private (only the back-end developers should have access to it) and
 // file name: entities/test.js
 const helpers = {
     parseTestArray: function testArray(item){
-        if(item.length > 2) return true else return false;
+        if(item.length > 2) return true; else return false;
     }
 }
 const model = {
@@ -77,8 +77,6 @@ Array1
 + is public (it is exposed to front-end)
 + it's DB field is 'array1'
 
-
-
 ### Usage examples
 
 Example: prepare private object (from server) for front-end
@@ -92,7 +90,7 @@ console.log(privateObj.makePublic());
 // will print: { Text1: 'ABCDEF', Array1: [ true, false, false ] }
 ```
 
-Example: prepare public object (received from request) for server manipulation
+Example: prepare public object (received from front-end) for server manipulation
 ```javascript
 var testPublicObj = { Text1: 'abcdef', Array1: [ true, false, false ] }
 
