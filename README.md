@@ -31,12 +31,12 @@ module.exports = model;
 
 **In this example:**
 
-Text1
+_Text1_
 + has to be a string
 + it is mandatory
 + it has to validate against a regEx.
 
-Array1
+_Array1_
 + has to be an array
 + the items from array must be of type boolean
 + it is not mandatory (by default mandatory == false if missing - throws warning)
@@ -68,12 +68,12 @@ module.exports = model;
 
 **In this example:**
 
-Text1
+_Text1_
 + is public (it is exposed to front-end)
 + it has a decorator
 + it's DB field is 'text1'
 
-Array1
+_Array1_
 + is public (it is exposed to front-end)
 + it's DB field is 'array1'
 
