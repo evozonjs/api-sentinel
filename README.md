@@ -51,7 +51,6 @@ const helpers = {
         return item.toUpperCase();
     }
 }
-
 const model = {
     Text1: {
         _public: true,
