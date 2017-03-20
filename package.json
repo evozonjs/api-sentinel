@@ -1,6 +1,6 @@
 {
   "name": "api-sentinel",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a JS layer between back-end and front-end",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "jasmine": "^2.5.3"
   },
   "devDependencies": {
-	"jasmine": "^2.5.3",
+    "jasmine": "^2.5.3",
     "standard": "^8.6.0"
   }
 }
