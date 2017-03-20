@@ -18,21 +18,21 @@ The other is private (only the back-end developers should have access to it) and
 ```javascript
 // file name: entities/test.js
 const helpers = {
-    parseTestArray: function testArray(item){
-        return item.length > 2
-    }
+  parseTestArray: function testArray(item){
+    return item.length > 2
+  }
 }
 const model = {
-    Text1: {
-        _type: 'string',
-        _mandatory: true,
-        _validate: '.{6,}$',
-    },
-    Array1: {
-        _type: 'array',
-        _itemType: 'boolean',
-        _validate: helpers.testArray,
-    },
+  Text1: {
+    _type: 'string',
+    _mandatory: true,
+    _validate: '.{6,}$',
+  },
+  Array1: {
+    _type: 'array',
+    _itemType: 'boolean',
+    _validate: helpers.testArray,
+  },
 }
 module.exports = model;
 ```
@@ -55,20 +55,20 @@ _Array1_
 ```javascript
 // file name: entities-private/test.js
 const helpers = {
-    upperText: function(item){
-        return item.toUpperCase();
-    }
+  upperText: function(item){
+    return item.toUpperCase();
+  }
 }
 const model = {
-    Text1: {
-        _public: true,
-	_decorator: helpers.upperText,
-        _privateName: 'text1'
-    },
-    Array1: {
-        _public: false,
-        _privateName: 'array1'
-    },
+  Text1: {
+    _public: true,
+    _decorator: helpers.upperText,
+    _privateName: 'text1'
+  },
+  Array1: {
+    _public: false,
+    _privateName: 'array1'
+  },
 }
 module.exports = model;
 ```
@@ -88,24 +88,24 @@ _Array1_
 
 Example: prepare private object (from server) for front-end
 ```javascript
-let testPrivateObj = {text1: 'abcdef', array1:[true, false, false]}
+let testPrivateObj = {text1: 'abcdef', array1: [true, false, false]}
 
 let privateObj = new privateEntity('test', testPrivateObj);
 // 'test' - entity name (the file name of the entity descriptor)
 
 console.log(privateObj.makePublic());
-// will print: { Text1: 'ABCDEF', Array1: [ true, false, false ] }
+// will print: {Text1: 'ABCDEF', Array1: [true, false, false]}
 ```
 
 Example: prepare public object (received from front-end) for server manipulation
 ```javascript
-let testPublicObj = { Text1: 'abcdef', Array1: [ true, false, false ] }
+let testPublicObj = {Text1: 'abcdef', Array1: [true, false, false]}
 
 let publicObj = new publicEntity('test', testPublicObj);
 // 'test' - entity name (the file name of the entity descriptor)
 
 console.log(publicEntity.makePrivate());
-// will print: { text1: 'abcdef', array1: [ true, false, false ] }
+// will print: {text1: 'abcdef', array1: [true, false, false]}
 ```
 
 ### License
