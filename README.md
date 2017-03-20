@@ -1,4 +1,8 @@
-[![npm](https://img.shields.io/npm/v/npm.svg)]()
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg">
+  <img src="https://img.shields.io/badge/version-v0.1.0-lightgreen.svg">
+  <img src="https://img.shields.io/badge/tests-6/6-orange.svg">
+</p>
 
 # api-sentinel
 a JS layer between back-end and front-end
