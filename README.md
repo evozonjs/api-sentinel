@@ -107,3 +107,7 @@ let publicObj = new publicEntity('test', testPublicObj);
 console.log(publicEntity.makePrivate());
 // will print: { text1: 'abcdef', array1: [ true, false, false ] }
 ```
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
