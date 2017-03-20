@@ -1,0 +1,28 @@
+{
+  "name": "api-sentinel",
+  "version": "0.0.1",
+  "description": "a JS layer between back-end and front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evozonjs/api-sentinel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evozonjs/api-sentinel/issues"
+  },
+  "homepage": "https://github.com/evozonjs/api-sentinel#readme",
+  "dependencies": {
+    "evozonjs-elements": "git://github.com/evozonjs/elements.git#v0.0.1",
+    "jasmine": "^2.5.3"
+  },
+  "devDependencies": {
+	"jasmine": "^2.5.3",
+    "standard": "^8.6.0"
+  }
+}
