@@ -1,4 +1,5 @@
 # api-sentinel
+[![GitHub release](https://img.shields.io/github/v0.1.0/qubyte/rubidium.svg)]()
 a JS layer between back-end and front-end
 
 ### Info
